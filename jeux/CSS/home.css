@@ -1,34 +1,40 @@
 .bloc1{ 
     border: 2px;
-    border-radius: 3px;
+    border-radius: 5px;
     border-style:solid;
     border-color: black;
-    width: 300px;
+    width: 25%;
     height: 400px;
     
 }
 .bloc2{ 
     border:2px;
-    border-radius: 3px;
+    border-radius: 5px;
     border-style:solid;
     border-color: black;
-    width: 300px;
+    width: 25%;
     height: 400px;
+    background-color: #392F5A;
+    
 }
 .bloc3{ 
     border:2px;
-    border-radius: 3px;
+    border-radius: 5px;
     border-style:solid;
     border-color: black;
-    width: 300px;
+    width: 25%;
     height: 400px;
+    
 }
 .flex{
     display: flex;
-    margin-left: 150px;
+    justify-content: space-around;
 }
 @media (hover: hover) {
     div.bloc2:hover {
-      
+      border-width:5px;
+      width: 320px;
     }
-
+    body{
+       
+    }
