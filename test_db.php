@@ -1,25 +1,26 @@
 <?php
-class DBConnect
+
+define("SERVEUR","localhost");
+define("USER","root");
+define("MDP","");
+define("BD","db");
+define("PORT","3306");
+
+function connexionBd($hote=SERVEUR,$username=USER,$mdp=MDP,$bd=BD,$port=PORT)
 {
-    private $dsn = "mysql:host=db;dbname=db;port=3306;charset=utf8";
-    private $dbUsername = "filou";
-    private $dbPassword = "cesi";
-    private $conn;
-
-    public function connect()
+    try
     {
-            echo 'Attempt Connection.     ';
-            $this->conn = new PDO($this->dsn, $this->dbUsername, $this->dbPassword);
+        $connex= new PDO('mysql:host='.$hote.';dbname='.$bd.';port='.$port, $username, $mdp);
+        $connex->exec("SET CHARACTER SET utf8");	//Gestion des accents
 
-            echo 'Connected successfully.      ';
-    //     } catch (PDOException $exception) {
-    //         echo 'Connection failed: ' . $exception->getMessage();
-    //     }
-    //     return $this->conn;
+        return $connex;
+    }
+    catch(Exception $e)
+    {
+        echo 'Erreur : '.$e->getMessage().'<br />';
+        echo 'N° : '.$e->getCode();
+        return null;
     }
 }
 
-
-$co = new DBConnect();
-$co->connect();
 ?>
