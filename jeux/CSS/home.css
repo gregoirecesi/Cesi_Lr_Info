@@ -1,0 +1,16 @@
+div.bloc1{ 
+    border:2px;
+    border-radius: 3px;
+}
+div.bloc2{ 
+    border:2px;
+    border-radius: 3px;
+}
+div.bloc3{ 
+    border:2px;
+    border-radius: 3px;
+}
+div.flex{
+    display: flex;
+    justify-content: space-between;
+}
