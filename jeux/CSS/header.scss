@@ -4,4 +4,41 @@ body{
 
 header{
     font-family: 'PT Sans Narrow', sans-serif;
+    display: flex;
+    height: 8vh;
+    border-bottom: solid black 1px;
+    box-shadow: 5px 2px 5px grey;
+    align-items: center;
+    padding-left: 5vw;
+    font-size: 26px;
+}
+
+.header{
+    display: flex;
+    width: 100vw;
+}
+
+.header a{
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.filou a{
+    text-decoration: none;
+    color: black;
+    justify-content: end;
+}
+
+.filou{
+    width: 20vw;
+}
+
+a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 999em;
+    transition-duration: 0.5s;
 }
