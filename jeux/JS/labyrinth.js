@@ -100,7 +100,7 @@ window.addEventListener("load", function() {
               });
       
               return [this.pos[0], this.pos[1]];
-            } else if (this.grid[y][x] === 3) {
+            } else if (this.grid[y][x] === 1) {
               $(function() {
                 $(".errors")
                   .html("Il y a un mur !")
