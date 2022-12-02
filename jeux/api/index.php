@@ -15,6 +15,7 @@ $response = json_decode($response);
     <title>Régions de la france</title>
 </head>
 <body>
+<img id="img" src="../IMG/smile.jpg" alt="" style="display: none;width:1920px;height:1080px;">
     <h1>Régions</h1>
 
     <div>Voici les différentes régions de la france à l'aide de l'api du gouvernement</div>
@@ -34,5 +35,17 @@ $response = json_decode($response);
             }
         ?>
     </div>
+    <div>
+        <a href="#" id="bouton" style="text-decoration:none; color:black">No clip</a>
+    </div>
+
+<script>
+    bouton.onclick=function(){
+        var audio = new Audio("../mp3/backrooms.mp3");
+        audio.play();
+        document.getElementById('img').style.display="inline";
+    };
+ 
+</script>
 </body>
 </html>

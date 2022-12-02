@@ -18,10 +18,10 @@ window.addEventListener("load", function() {
   [1, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 2, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 2, 1, 0, 1, 0, 0, 0, 0, 2, 0, 1, 0, 0, 0, 1],
   [1, 0, 0, 1, 0, 2, 0, 1, 1, 0, 1, 1, 0, 0, 1, 0, 2, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 0, 0, 2, 1, 1, 0, 0, 1, 1, 0, 2, 0, 0, 1, 1, 1, 1],
   [1, 0, 1, 0, 1, 0, 2, 0, 0, 0, 1, 0, 1, 0, 0, 0, 2, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1],
-  [1, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 1, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 1, 1, 0, 0, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 1, 2, 2, 2, 2, 2, 1, 1, 0, 1],
+  [1, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 0, 1, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0, 1, 1, 0, 0, 2, 2, 2, 2, 2, 0, 0, 1, 0, 0, 1, 2, 2, 2, 2, 2, 1, 1, 0, 1],
   [1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1],
-  [1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1],
-  [1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1],
+  [1, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 1],
+  [1, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1],
   [1, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 0, 1],
   [1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 0, 0, 1, 0, 1],
   [1, 0, 0, 1, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1],
@@ -31,7 +31,7 @@ window.addEventListener("load", function() {
   
         this.pos = [1, 1];
   
-        this.skills = 0;
+        this.skills = 3;
       },
   
       /*
@@ -48,9 +48,9 @@ window.addEventListener("load", function() {
   
           for (var x = 0; x < this.grid[y].length; x++) {
             if (this.grid[y][x] === 1) {
-              row += '<td bgcolor="black"></td>';
+              row += '<td><img class="img-circle" src="../IMG/wall.png" width="30" height="30" alt="html"></td>';
             } else if (this.grid[y][x] === 2) {
-              row += '<td bgcolor="yellow"></td>';
+              row += '<td><img class="img-circle" src="../IMG/diamond.png" width="30" height="30" alt="html"></td>';
             } else if (this.grid[y][x] === 3) {
               row +=
                 '<td><img class="img-circle" src="http://www.jf-developpeur-web.fr/img/js-laby.png" alt="labyrinthe javascript"></td>';
@@ -59,13 +59,13 @@ window.addEventListener("load", function() {
                 '<td><img class="img-circle" src="http://www.jf-developpeur-web.fr/img/php-laby.png" alt="labyrinthe javascript"></td>';
             } else if (x === this.pos[0] && y === this.pos[1]) {
               row +=
-                '<td><img class="img-circle" src="http://www.jf-developpeur-web.fr/img/avatar-laby.jpg" alt="html"></td>';
+                '<td><img class="img-circle" src="../IMG/microbe.png" width="27" height="27" alt="html"></td>';
             } else if (this.grid[y][x] === "in") {
               row +=
-                '<td><i class="fa fa-minus-circle" aria-hidden="true"></i></td>';
+                '<td><img class="img-circle" src="../IMG/finish.png" width="30" height="30" alt="html"></td>';
             } else if (this.grid[y][x] === "out") {
               row +=
-                '<td><i class="fa fa-long-arrow-right" aria-hidden="true"></i></td>';
+                '<td><img class="img-circle" src="../IMG/finish.png" width="30" height="30" alt="html"></td>';
             } else {
               row += "<td></td>";
             }
@@ -82,82 +82,82 @@ window.addEventListener("load", function() {
           si this.grid[x][y] === 1 on rencontre un mur
           si this.grid[x][y] === 'out' on a gagné
       */
-      check: function(x, y) {
-        if (
-          x < 0 ||
-          y < 0 ||
-          x > this.grid[0].length - 1 ||
-          y > this.grid.length - 1
-        ) {
-          $(function() {
-            $(".errors")
-              .html("Déplacement impossible !")
-              .fadeOut(2000, function() {
-                $(this)
-                  .html("")
-                  .fadeIn();
+          check: function(x, y) {
+            if (
+              x < 0 ||
+              y < 0 ||
+              x > this.grid[0].length - 1 ||
+              y > this.grid.length - 1
+            ) {
+              $(function() {
+                $(".errors")
+                  .html("Déplacement impossible !")
+                  .fadeOut(2000, function() {
+                    $(this)
+                      .html("")
+                      .fadeIn();
+                  });
               });
-          });
-  
-          return [this.pos[0], this.pos[1]];
-        } else if (this.grid[y][x] === 1) {
-          $(function() {
-            $(".errors")
-              .html("Il y a un mur !")
-              .fadeOut(2000, function() {
-                $(this)
-                  .html("")
-                  .fadeIn();
+      
+              return [this.pos[0], this.pos[1]];
+            } else if (this.grid[y][x] === 1) {
+              $(function() {
+                $(".errors")
+                  .html("Il y a un mur !")
+                  .fadeOut(2000, function() {
+                    $(this)
+                      .html("")
+                      .fadeIn();
+                  });
               });
-          });
-          return [this.pos[0], this.pos[1]];
-        } else if (this.grid[y][x] === "out") {
-          if (this.skills === 3) {
-            $(function() {
-              $(".success")
-                .html('<p class="alert-success">Bravo c\'est gagné !</p>')
-                .fadeIn(2000);
-            });
-            return [-1, -1];
-          } else {
-            $(function() {
-              $(".errors")
-                .html("Il vous manque des compétences !")
-                .fadeOut(2000, function() {
-                  $(this)
-                    .html("")
-                    .fadeIn();
+              return [this.pos[0], this.pos[1]];
+            } else if (this.grid[y][x] === "out") {
+              if (this.skills === 3) {
+                $(function() {
+                  $(".success")
+                    .html('<p class="alert-success">Bravo c\'est gagné !</p>')
+                    .fadeIn(2000);
                 });
-            });
-  
-            return [this.pos[0], this.pos[1]];
+                return [-1, -1];
+              } else {
+                $(function() {
+                  $(".errors")
+                    .html("Il vous manque des compétences !")
+                    .fadeOut(2000, function() {
+                      $(this)
+                        .html("")
+                        .fadeIn();
+                    });
+                });
+      
+                return [this.pos[0], this.pos[1]];
+              }
+            } else if (this.grid[y][x] === 2) {
+              $(function() {
+                $("#htmlLogo").prop("checked", true);
+              });
+              this.grid[y][x] = 0;
+              this.skills += 1;
+              return [x, y];
+            } else if (this.grid[y][x] === 3) {
+              $(function() {
+                $("#jsLogo").prop("checked", true);
+              });
+              this.grid[y][x] = 0;
+              this.skills += 1;
+              return [x, y];
+            } else if (this.grid[y][x] === 4) {
+              $(function() {
+                $("#phpLogo").prop("checked", true);
+              });
+              this.grid[y][x] = 0;
+              this.skills += 1;
+              return [x, y];
+            } else {
+              return [x, y];
+            }
           }
-        } else if (this.grid[y][x] === 2) {
-          $(function() {
-            $("#htmlLogo").prop("checked", true);
-          });
-          this.grid[y][x] = 0;
-          this.skills += 1;
-          return [x, y];
-        } else if (this.grid[y][x] === 3) {
-          $(function() {
-            $("#jsLogo").prop("checked", true);
-          });
-          this.grid[y][x] = 0;
-          this.skills += 1;
-          return [x, y];
-        } else if (this.grid[y][x] === 4) {
-          $(function() {
-            $("#phpLogo").prop("checked", true);
-          });
-          this.grid[y][x] = 0;
-          this.skills += 1;
-          return [x, y];
-        } else {
-          return [x, y];
-        }
-      }
-    };
+        };
   
     /*
   function listenToKeyboard: fonction appliqué a l'ecoute du clavier
