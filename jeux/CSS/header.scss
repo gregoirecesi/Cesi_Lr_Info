@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #CAF0F8;
+    width: 100vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-shadow: 15px black;
+}
+
+.documentation{
+    padding-right: 10px;
+}
+
+.icone{
+padding-left: 6vw;
+padding-right: 6vw;
+}
+
+.nuit{
+    padding-left: 10px;
+}
+
+.head a{
+    text-decoration: none;
+    color: white;
+}
+
+.fond{
+    display: flex;
+    align-items: center;
+    background-color: #0077B6;
+    padding: 2vh;
+    border-radius: 0 0 20% 20%;
+}
