@@ -1,10 +1,13 @@
 .bloc1{ 
+    background-image: url(/jeux/IMG/img_lab.png); 
+    background-repeat: no-repeat;
+    background-position: center;
     border: 2px;
     border-radius: 25px;
     border-style:solid;
     border-color: black;
-    width: 25%;
-    height: 100%;
+    width: 25vw;
+    height: 90vh;
     
 }
 .bloc2{ 
@@ -12,8 +15,8 @@
     border-radius: 25px;
     border-style:solid;
     border-color: black;
-    width: 25%;
-    height: 100%;
+    width: 25vw;
+    height: 90vh;
     background-color: #392F5A;
     
 }
@@ -25,10 +28,17 @@
     border-radius: 25px;
     border-style:solid;
     border-color: black;
-    width: 25%;
-    height: 100%;
-    
+    width: 25vw;
+    height: 90vh;
+}   
+
+.titres{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
 }
+
 .flex{
     display: flex;
     justify-content: space-around;
