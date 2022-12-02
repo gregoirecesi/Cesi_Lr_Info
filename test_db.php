@@ -1,8 +1,8 @@
 <?php
 
-define("SERVEUR","localhost");
-define("USER","root");
-define("MDP","");
+define("SERVEUR","db");
+define("USER","filou");
+define("MDP","cesi");
 define("BD","db");
 define("PORT","3306");
 
