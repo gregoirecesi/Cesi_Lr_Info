@@ -30,4 +30,7 @@ export function reponse(txtBtn) {
 export function finPartie() {
     // TODO Traiter la fin de partie
     console.log(reponses);
+    const reponsesPositives = (reponses.filter(r => r.reponse == 'oui').length / nbQuestions) * 100;
+    // console.log(window.location.href.split('index.html')[1] + 'classement.php?reponsesPositives=' + reponsesPositives);
+    window.location.href = window.location.href.split('index.html')[1] + 'classement.php?reponsesPositives=' + reponsesPositives;
 }
