@@ -14,9 +14,8 @@ include "../HTML/header.html";
     <div class="flex">
         <div class="bloc1">    <h1 class="titre_lab">Labyrinthe</h1>     </div>
         <div class="bloc2">    <h1 class="titre_NI">La Nuit de l'info</h1>     </div>
-        <div class="bloc3">    <h1 class="titre_TP">Test de Pureté</h1>     </div>
-        
-</div>
+        <div class="bloc3">    <h1 class="titre_TP">Test de Pureté</h1>     </div>    
+    </div>
 
 
 </body>
