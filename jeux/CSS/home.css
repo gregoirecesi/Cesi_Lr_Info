@@ -2,19 +2,13 @@
     background-image: url(/jeux/IMG/img_lab.png); 
     background-repeat: no-repeat;
     background-position: center;
-    border: 2px;
     border-radius: 25px;
-    border-style:solid;
-    border-color: black;
     width: 25vw;
     height: 90vh;
     
 }
 .bloc2{ 
-    border:2px;
     border-radius: 25px;
-    border-style:solid;
-    border-color: black;
     width: 25vw;
     height: 90vh;
     background-color: #392F5A;
@@ -24,19 +18,21 @@
     background-image: url(/jeux/IMG/img_TP.png); 
     background-repeat: no-repeat;
     background-position: center;
-    border:2px;
     border-radius: 25px;
-    border-style:solid;
-    border-color: black;
     width: 25vw;
     height: 90vh;
 }   
 
-.titres{
+.titre_lab, .titre_TP, .titre_NI{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80vh;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.titre_TP, .titre_NI{
+    color: white;
 }
 
 .flex{
@@ -46,7 +42,18 @@
     height: 90%;
 }
 @media (hover: hover) {
-    div.bloc2:hover {
+    div.bloc1:hover {
       border-width:5px;
-      width: 27%;
-    }}
+      width: 27vw;
+      height: 92vh;
+    }
+    div.bloc2:hover {
+        border-width:5px;
+        width: 27vw;
+        height: 92vh;
+    }
+    div.bloc3:hover {
+        border-width:5px;
+        width: 27vw;
+        height: 92vh;
+      }}
