@@ -15,6 +15,9 @@ $response = json_decode($response);
 </head>
 <body>
     <h1>Régions</h1>
+
+    <div>Voici les différentes régions de la france à l'aide de l'api du gouvernement</div>
+
     <div>
         <?php
             foreach($response as $row)
