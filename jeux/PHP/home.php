@@ -3,6 +3,9 @@
 <link rel="stylesheet" href="/jeux/CSS/home.css">
     <title></title>
 </head>
+<?php
+include "../HTML/header.html";
+?>
 <body>
     <div class="flex">
         <div class="bloc1">    <h1 class="titres">Labyrinthe</h1>     </div>

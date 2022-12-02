@@ -14,6 +14,9 @@ $response = json_decode($response);
     <link rel="stylesheet" href="../CSS/api.scss">
     <title>Régions de la france</title>
 </head>
+<?php
+include "../HTML/header.html";
+?>
 <body>
 <img id="img" src="../IMG/smile.jpg" alt="" style="display: none;width:1920px;height:1080px;">
     <h1>Régions</h1>
