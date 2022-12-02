@@ -8,7 +8,9 @@
     <script src="../JS/labyrinth.js"></script>
     <script src="../JS/konami.js"></script>
 </head>
-
+<?php
+include "../HTML/header.html";
+?>
 <body>
     <section class="container-fluid content">
         <div class="row">    
