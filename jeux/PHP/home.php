@@ -12,9 +12,9 @@ include "../HTML/header.html";
 ?>
 <body>
     <div class="flex">
-        <div class="bloc1">    <h1 class="titre_lab">Labyrinthe</h1>     </div>
-        <div class="bloc2">    <h1 class="titre_NI">La Nuit de l'info</h1>     </div>
-        <div class="bloc3">    <h1 class="titre_TP">Test de Pureté</h1>     </div>    
+        <div class="bloc1"><a href="./maze.php">   <h1 class="titre_lab" href="./PHP/maze.php">Labyrinthe</h1>     </div></a> 
+        <div class="bloc2"><a href="https://www.nuitdelinfo.com/">    <h1 class="titre_NI">La Nuit de l'info</h1>     </div></a> 
+        <div class="bloc3"><a href="./maze.php">    <h1 class="titre_TP">Test de Pureté</h1>     </div></a> 
     </div>
 
 

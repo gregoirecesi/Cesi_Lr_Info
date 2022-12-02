@@ -12,6 +12,9 @@ $response = json_decode($response);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/api.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&display=swap" rel="stylesheet">
     <title>Régions de la france</title>
 </head>
 <?php
@@ -21,7 +24,9 @@ include "../HTML/header.html";
 <img id="img" src="../IMG/smile.jpg" alt="" style="display: none;width:1920px;height:1080px;">
     <h1>Régions</h1>
 
-    <div>Voici les différentes régions de la france à l'aide de l'api du gouvernement</div>
+    <div class="description">Voici les différentes régions de la france à l'aide de l'API du gouvernement</div>
+
+    <div class="lim"></div>
 
     <div class="regions">
         <?php
@@ -38,7 +43,7 @@ include "../HTML/header.html";
             }
         ?>
     </div>
-    <div>
+    <div class="noclip">
         <a href="#" id="bouton" style="text-decoration:none; color:black">No clip</a>
     </div>
 
